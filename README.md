@@ -44,6 +44,7 @@ The project requirements/dependencies are listed in the import statements at the
 * seaborn
 * scipy
 * plotly
+
 To set up your local environment and get started with the project, you need to follow these steps:
 
 1. Install Python on your computer if you haven't already done so. You can download Python from the official website: https://www.python.org/downloads/
