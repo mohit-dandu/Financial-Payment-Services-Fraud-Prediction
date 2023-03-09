@@ -17,7 +17,7 @@
 
 
 ## General Information
-Our major motivation behind choosing fraud detection as our project is that this has become a significant issue in the world.With increasing value for money and the number of trades happening throughout the world every second, it is vital to ensure that every transaction is true and real. It is humanly not possible to keep a check on whether every transaction is genuine and is not a Fraud. Hence our goal is to provide a project which will help us in showing how to detect frauds more consistently and accurately giving as minimum errors as possible.
+Our major motivation behind choosing fraud detection as our project is that this has become a significant issue in the world. With increasing value for money and the number of trades happening throughout the world every second, it is vital to ensure that every transaction is true and real. It is humanly not possible to keep a check on whether every transaction is genuine and is not a Fraud. Hence our goal is to provide a project which will help us in showing how to detect frauds more consistently and accurately giving as minimum errors as possible.
 
 
 ## Technologies Used
