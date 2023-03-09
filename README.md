@@ -1,90 +1,75 @@
 
  # Financial Payment Services Fraud Prediction
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+* Fraud detection is the process of identifying illegal acts that result in the acquisition of money or property under false pretenses.
+* Our project aimed to use logistic regression to improve the detection rate of fraudulent payments.
+* We conducted detailed data exploration and cleaning to find an optimal solution for identifying fraudulent payments.
+* Our framework addresses class imbalance, chooses the appropriate logistic regression method and creates derived variables to improve fraud detection accuracy.
+* We successfully developed an algorithm for detecting fraudulent transactions in financial data.
 
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
 * [Features](#features)
-* [Screenshots](#screenshots)
 * [Setup](#setup)
 * [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
-* [Contact](#contact)
-<!-- * [License](#license) -->
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+Our major motivation behind choosing fraud detection as our project is that this has become a significant issue in the world.With increasing value for money and the number of trades happening throughout the world every second, it is vital to ensure that every transaction is true and real. It is humanly not possible to keep a check on whether every transaction is genuine and is not a Fraud. Hence our goal is to provide a project which will help us in showing how to detect frauds more consistently and accurately giving as minimum errors as possible.
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- Python libraries: Scikit-learn, Numpy, Pandas, Matplotlib, Seaborn, Missingno
 
 
 ## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+After building the Logistic regression model and finding out the accuracy and AUC curve the below analysis can be made.
+* The total number of fraud transactions was 8213 out of 6362620 transactions.
+* These fraud transactions were either CASH_OUT or DEBIT and were made from a customer-to-Customer account.
+* We trained in Logistic Regression algorithm. It gave the score of 99.91%
 
-
-## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
+The project requirements/dependencies are listed in the import statements at the beginning of the code:
+* numpy
+* pandas
+* missingno
+* imblearn
+* lightgbm
+* xgboost
+* matplotlib
+* seaborn
+* scipy
+* plotly
+To set up your local environment and get started with the project, you need to follow these steps:
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+1. Install Python on your computer if you haven't already done so. You can download Python from the official website: https://www.python.org/downloads/
+
+2. Open a command prompt or terminal window and navigate to the directory where you want to store the project files.
+
+3. Clone the project repository using Git or download the project files directly from the repository.
+
+4. Install the required dependencies by running the following commands in your command prompt or terminal window:
+`pip install numpy pandas missingno imblearn lightgbm xgboost matplotlib seaborn scipy plotly`
+
+5. Once the dependencies are installed, you can open the Jupyter Notebook file containing the project code and run the code cells to execute the project.
+
 
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+This project can be used to improve fraud detection and prevention in financial payment services. It can help to detect fraud patterns, analyze customer behavior, assess risk, prevent fraud, monitor transactions and analyze chargebacks. By leveraging this algorithms, financial institutions can reduce the risk of fraud, improve customer trust, and increase profitability.
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _complete_
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
-Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
-
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
-
-
-## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+In this study, we evaluated the effectiveness of using specific supervised machine learning techniques to solve the problem of fraud detection in financial transactions. The limitations of the methods applied in this study are as follows:
+* We used a pre-labeled dataset to train the algorithms. However, usually, it is difficult to find labeled data and thus applying supervised machine learning techniques may not be feasible. In such cases, we should evaluate unsupervised techniques which were beyond the scope of this study.
+* This study considers digital transactions data that includes amount transacted, the balance of recipient and originator, and time of transaction. These variables that helped in detecting fraud may not apply to other types of financial transactions, such as credit card fraud.
+* We evaluated machine learning algorithms – Logistic Regression. Although the result of the study using these algorithms is good, it is necessary to evaluate other techniques to determine which algorithm works best for this application.
+* Due to the large size of the data, we were limited by computation capacity to explore different techniques such as grid search for parameter tuning, SMOTE sampling technique. These techniques may help in further improving the results of this study.
